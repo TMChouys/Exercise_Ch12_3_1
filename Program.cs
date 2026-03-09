@@ -7,9 +7,16 @@ namespace Exercise_Ch12_3_1
         static void Main(string[] args)
         {
             string userInput;
-            Console.Write("請輸入測試整數值=>");
-            userInput = Console.ReadLine() ?? "0";
-            int value = Convert.ToInt32(userInput);
+            Console.Write("請輸入第1個運算元=>");
+            userInput = Console.ReadLine();
+            int x = Convert.ToInt32(userInput);
+            Console.Write("請輸入第2個運算元=>");
+            userInput = Console.ReadLine();
+            int y = Convert.ToInt32(userInput);
+            Console.Write("請輸入索引值=>");
+            userInput = Console.ReadLine();
+            int index = Convert.ToInt32(userInput);
+
             try
             {
                 Console.WriteLine("例外處理開始");
